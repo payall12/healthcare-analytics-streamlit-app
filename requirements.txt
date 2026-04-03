@@ -1,10 +1,8 @@
-pandas
-numpy
-matplotlib 
-seaborn
-scikit-learn
-tensorflow
 streamlit
-Pillow
+numpy
+pandas
+scikit-learn
 joblib
+Pillow
 gdown
+tensorflow-cpu==2.15.0
