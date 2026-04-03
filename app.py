@@ -9,6 +9,15 @@ import tensorflow as tf
 from keras.preprocessing.image import img_to_array
 import time
 
+import os
+import gdown
+
+model_path = "Models/pneumonia_cnn_model.h5"
+
+if not os.path.exists(model_path):
+    url = "https://drive.google.com/uc?id=1UBzpEFB4rJ5X3nu8enYOkd0gLwNEw1SZ"
+    gdown.download(url, model_path, quiet=False)
+    
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(page_title="AI Clinical Assistant", page_icon="⚕️", layout="wide")
 
