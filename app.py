@@ -12,6 +12,9 @@ import time
 import os
 import gdown
 
+# create Models folder
+os.makedirs("Models", exist_ok=True)
+
 model_path = "Models/pneumonia_cnn_model.h5"
 
 if not os.path.exists(model_path):
