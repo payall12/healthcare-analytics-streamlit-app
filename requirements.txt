@@ -5,5 +5,5 @@ scikit-learn
 joblib
 Pillow
 gdown
-tensorflow==2.15.0
+tensorflow-cpu==2.16.1
 keras==2.15.0
