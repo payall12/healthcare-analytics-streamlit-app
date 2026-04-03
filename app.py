@@ -12,11 +12,12 @@ import time
 import os
 import gdown
 
-# create Models folder
+# ensure Models folder exists
 os.makedirs("Models", exist_ok=True)
 
 model_path = "Models/pneumonia_cnn_model.h5"
 
+# download CNN model from Drive if missing
 if not os.path.exists(model_path):
     url = "https://drive.google.com/uc?id=1UBzpEFB4rJ5X3nu8enYOkd0gLwNEw1SZ"
     gdown.download(url, model_path, quiet=False)
